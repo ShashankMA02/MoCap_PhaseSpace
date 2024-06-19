@@ -9,6 +9,6 @@ A. [Publisher]
 
 
 B. [Subscriber]
-1. Build the workspace using catkin in ROS1
+1. Build the workspace using catkin and also colcon build it in ROS1
 2. Create a folder with below file and grant permission for the file (chmod +x <filename>
 3. focas-main@focaslab-01:~/catkin_hexa_ws/Mocap_listener$ ./mocap_listen4.py  [terminal-2 comand]
