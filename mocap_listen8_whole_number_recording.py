@@ -12,7 +12,7 @@ class MocapDataLogger:
         self.record_count = 0  # Variable to count the number of records saved
 
         # Define the home position
-        self.home_position = [1594, 1538, 310, -3, -2, -15]    # subtract from this intial values to get absolute values of the rigid
+        self.home_position = [1594, 1538, 310, -3, -2, -15]    # Subtract from this intial values to get absolute values of the rigid
         self.initialized = False
 
         # Write the header to the CSV file
