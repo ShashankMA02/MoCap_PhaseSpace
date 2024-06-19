@@ -1,3 +1,6 @@
+## Working perfectely fine with user defined recording rate 
+## Mocap value are upto 8 or 12 decimal places
+
 import rospy
 import csv
 import tf.transformations
