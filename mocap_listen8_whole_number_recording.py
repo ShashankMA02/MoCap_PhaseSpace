@@ -6,13 +6,13 @@ from phasespace_msgs.msg import Rigids  # Replace with the actual message type
 class MocapDataLogger:
     def __init__(self):
         rospy.init_node("mocap_data_logger")  # Initialize ROS node
-        self.csv_filename = "mocapHexa_mot12_data.csv"
+        self.csv_filename = "mocapHexa_mot12_data.csv"  # Change the file accordingly here
         self.pose_data = None  # Store the most recent pose data
         self.pose_subscriber = rospy.Subscriber('/phasespace/rigids', Rigids, self.mocap_callback)
         self.record_count = 0  # Variable to count the number of records saved
 
         # Define the home position
-        self.home_position = [1594, 1538, 310, -3, -2, -15]
+        self.home_position = [1594, 1538, 310, -3, -2, -15]    # subtract from this intial values to get absolute values of the rigid
         self.initialized = False
 
         # Write the header to the CSV file
